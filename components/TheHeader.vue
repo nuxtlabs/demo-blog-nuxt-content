@@ -1,6 +1,6 @@
 <template>
   <header class="flex">
     <NuxtLink to="/"><Logo class="mb-4" /></NuxtLink>
-    <AppSearchInput />
+    <AppSearchInput class="ml-8" />
   </header>
 </template>
