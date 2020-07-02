@@ -2,7 +2,7 @@
 title: My Third Blog Post
 description: Learning how to use @nuxt/content to create a blog
 img: https://images.unsplash.com/photo-1588010986054-727675e6f36a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60
-alt: my first blog post
+alt: my third blog post
 author: 
   name: Alexandra
   bio: All about Alexandra and where she works and what she does
