@@ -36,7 +36,7 @@
       <h1 class="font-bold text-4xl">{{ article.title }}</h1>
       <p>{{ article.description }}</p>
       <p class="pb-4">Post last updated: {{ formatDate(article.updatedAt) }}</p>
-
+      <!-- table of contents -->
       <nav class="pb-6">
         <ul>
           <li
@@ -58,11 +58,11 @@
           </li>
         </ul>
       </nav>
-
+      <!-- content from markdown -->
       <nuxt-content :document="article" />
-
+      <!-- content author component -->
       <author :author="article.author" />
-
+      <!-- prevNext component -->
       <PrevNext :prev="prev" :next="next" class="mt-8" />
     </div>
   </article>
