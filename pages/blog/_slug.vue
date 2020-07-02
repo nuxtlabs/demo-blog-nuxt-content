@@ -36,6 +36,7 @@
       <h1 class="font-bold text-4xl">{{ article.title }}</h1>
       <p>{{ article.description }}</p>
       <p class="pb-4">Post last updated: {{ formatDate(article.updatedAt) }}</p>
+
       <nav class="pb-6">
         <ul>
           <li
@@ -57,6 +58,7 @@
           </li>
         </ul>
       </nav>
+
       <nuxt-content :document="article" />
 
       <author :author="article.author" />
