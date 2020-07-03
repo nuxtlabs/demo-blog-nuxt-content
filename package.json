@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@nuxt/content": "1.4.0",
-    "nuxt": "2.13.2",
+    "nuxt": "2.13.3",
     "prism-themes": "1.4.0"
   },
   "devDependencies": {
