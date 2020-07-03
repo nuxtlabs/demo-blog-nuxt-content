@@ -31,6 +31,23 @@
         </NuxtLink>
       </li>
     </ul>
+    <footer class="flex justify-center border-gray-500 border-t-2">
+      <p class="mt-4">
+        Created by
+        <a
+          href="https://twitter.com/debs_obrien"
+          class="font-bold hover:underline"
+          >Debbie O'Brien</a
+        >
+        at NuxtJS. See the
+        <a
+          href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content"
+          class="font-bold hover:underline"
+          >tutorial</a
+        >
+        for how to build it.
+      </p>
+    </footer>
   </div>
 </template>
 
@@ -38,8 +55,8 @@
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
-      .only(['title', 'description', 'img', 'slug', 'author', 'position'])
-      .sortBy('updatedAt', 'desc')
+      .only(['title', 'description', 'img', 'slug', 'author'])
+      .sortBy('createdAt', 'desc')
       .fetch()
     return {
       articles

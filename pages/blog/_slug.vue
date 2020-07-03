@@ -27,6 +27,12 @@
         >
           All articles
         </NuxtLink>
+        <a
+          href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content"
+          class="mr-8 self-center text-white font-bold hover:underline"
+        >
+          Tutorial
+        </a>
         <AppSearchInput />
       </div>
     </div>
