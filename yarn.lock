@@ -1183,10 +1183,10 @@
     rc9 "^1.0.0"
     std-env "^2.2.1"
 
-"@nuxt/content@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@nuxt/content/-/content-1.4.0.tgz#f9fa353cf95540b9b22f05b903867afb0ea0cfc9"
-  integrity sha512-f8MoxvpFnWNMJCv5wm3Eo33ypY1JvwXf9DeiaLHZlTicnXQ4oQeq+BpNQ2RhFAgkwG7yDguOdk6zpwtAVBCCGw==
+"@nuxt/content@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@nuxt/content/-/content-1.4.1.tgz#87da60a704a3fa15afe8027a785d95af524d91b9"
+  integrity sha512-1mEJ/nV6Cu3pDUV0bKAwkqr/G1kb/LAz3xEH6mN3aPjF2mcKfDNYm3BmZhfXOIIYRljll7yqA42QHoOPAleZZA==
   dependencies:
     "@lokidb/full-text-search" "^2.0.0-beta.9"
     "@lokidb/loki" "^2.0.0-beta.9"
@@ -1204,11 +1204,11 @@
     mkdirp "^1.0.4"
     node-req "^2.1.2"
     node-res "^5.0.1"
-    p-queue "6.4.0"
+    p-queue "6.5.0"
     prismjs "^1.20.0"
     rehype-raw "^4.0.2"
-    rehype-sort-attribute-values "^3.0.1"
-    rehype-sort-attributes "^3.0.1"
+    rehype-sort-attribute-values "^3.0.2"
+    rehype-sort-attributes "^3.0.2"
     remark-autolink-headings "^6.0.1"
     remark-external-links "^6.1.0"
     remark-footnotes "^1.0.0"
@@ -4089,7 +4089,7 @@ etag@^1.8.1, etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-eventemitter3@^4.0.0:
+eventemitter3@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.4.tgz#b5463ace635a083d018bdc7c917b4c5f10a85384"
   integrity sha512-rlaVLnVxtxvoyLsQQFBx53YmXHDxRIzzTLbdfxqi4yocpSjAxXwkU0cScM5JgSKMqEhrZpnvQ2D9gjylR0AimQ==
@@ -6852,12 +6852,12 @@ p-map@^4.0.0:
   dependencies:
     aggregate-error "^3.0.0"
 
-p-queue@6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-6.4.0.tgz#5050b379393ea1814d6f9613a654f687d92c0466"
-  integrity sha512-X7ddxxiQ+bLR/CUt3/BVKrGcJDNxBr0pEEFKHHB6vTPWNUhgDv36GpIH18RmGM3YGPpBT+JWGjDDqsVGuF0ERw==
+p-queue@6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-6.5.0.tgz#40d6bafdd3bb0c8eaa03e0649ba6fa3ce7249947"
+  integrity sha512-FLaTTD9Am6TeDfNuN0d+INeyVJoICoBS+OVP5K1S84v4w51LN3nRkCT+WC7xLBepV2s+N4LibM7Ys7xcSc0+1A==
   dependencies:
-    eventemitter3 "^4.0.0"
+    eventemitter3 "^4.0.4"
     p-timeout "^3.1.0"
 
 p-timeout@^3.1.0:
@@ -8322,19 +8322,19 @@ rehype-raw@^4.0.2:
   dependencies:
     hast-util-raw "^5.0.0"
 
-rehype-sort-attribute-values@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/rehype-sort-attribute-values/-/rehype-sort-attribute-values-3.0.1.tgz#1a519ef057c0075fbb228c1cb947b978c2ac62f8"
-  integrity sha512-YWu3nOVc+PAup6Mo9LvUYrsm2U/0DkTvNlZqZzEnfgTn8f/dUUqfc697/W7Ckj9hEDmJA+Bg/g0sWtjBhVCPJg==
+rehype-sort-attribute-values@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/rehype-sort-attribute-values/-/rehype-sort-attribute-values-3.0.2.tgz#7f4b41c2dc46a67c26d42bc9fd872ab76fece194"
+  integrity sha512-6QGua2vM3DytGRJcL11UTYLP5w5ItRgaQI2PhS3zLhvgKFkO/sb+JgcYsLCnkli9MCTkSvuEYArkiA1txtAtPA==
   dependencies:
     hast-util-is-element "^1.0.0"
     unist-util-visit "^2.0.0"
     x-is-array "^0.1.0"
 
-rehype-sort-attributes@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/rehype-sort-attributes/-/rehype-sort-attributes-3.0.1.tgz#e20d35304a47e7118703ed31d97fbbbaf53968c2"
-  integrity sha512-6axA4MHGDMioNRUSVnPDa029JInAxqFhMDZrEhFESugOIKrMKuRbnQWKka96oeuGA2YHSuA7TtkLVtsBpmzvMg==
+rehype-sort-attributes@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/rehype-sort-attributes/-/rehype-sort-attributes-3.0.2.tgz#18c7e86b34de4b0222d0d54412e860333bd74b7e"
+  integrity sha512-roPtOHX6BfLXge161TnxOh+jr8JhZwUDVdqYI/qobYpfAkXgBfnftpWlwcShdsExa+nbUd5zU7z9A0nHBi35+A==
   dependencies:
     unist-util-visit "^2.0.0"
 

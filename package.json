@@ -22,7 +22,7 @@
     }
   },
   "dependencies": {
-    "@nuxt/content": "1.4.0",
+    "@nuxt/content": "1.4.1",
     "nuxt": "2.13.3",
     "prism-themes": "1.4.0"
   },
