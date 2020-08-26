@@ -72,7 +72,7 @@ export default {
       .sortBy('createdAt', 'asc')
       .fetch()
     const tags = await $content('tags')
-      .where({ name: { $contains: params.tag } })
+      .where({ slug: { $contains: params.tag } })
       .limit(1)
       .fetch()
     const tag = tags.length > 0 ? tags[0] : {}
