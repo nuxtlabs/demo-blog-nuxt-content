@@ -1,6 +1,7 @@
 <template>
   <div class="m-8">
     <TheHeader />
+
     <h1 class="font-bold text-4xl">Blog Posts</h1>
     <ul class="flex flex-wrap">
       <li
@@ -37,11 +38,11 @@
         :key="tag.slug"
         class="xs:w-full md:w-1/3 lg:flex-1 px-2 text-center"
       >
-        <NuxtLink :to="`/blog/tag/${tag.title}`" class="">
+        <NuxtLink :to="`/blog/tag/${tag.name}`" class="">
           <p
             class="font-bold text-gray-600 uppercase tracking-wider font-medium text-ss"
           >
-            {{ tag.title }}
+            {{ tag.name }}
           </p>
         </NuxtLink>
       </li>
@@ -74,7 +75,7 @@ export default {
       .sortBy('createdAt', 'desc')
       .fetch()
     const tags = await $content('tags', params.slug)
-      .only(['title', 'description', 'img', 'slug', 'author'])
+      .only(['name', 'description', 'img', 'slug'])
       .sortBy('createdAt', 'asc')
       .fetch()
     return {

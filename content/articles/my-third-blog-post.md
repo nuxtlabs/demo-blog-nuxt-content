@@ -9,7 +9,7 @@ author:
   img: https://images.unsplash.com/photo-1506956191951-7a88da4435e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60
 tags: 
   - javascript
-  - misc
+  - web-development
 ---
 
 ## Welcome to my third blog post using content module

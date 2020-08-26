@@ -5,7 +5,7 @@
     <div class="relative lg:w-1/2 xs:w-full xs:h-84 lg:h-full post-left">
       <img
         :src="tag.img"
-        :alt="tag.title"
+        :alt="tag.name"
         class="absolute h-full w-full object-cover"
       />
     </div>
@@ -16,7 +16,7 @@
       <div class="mt-16 -mb-3 flex flex-col text-sm">
         <div class="relative lg:w-1/2 xs:w-full xs:h-84 lg:h-full post-left">
           <h1 class="text-4xl font-bold uppercase">
-            {{ tag.title }}
+            {{ tag.name }}
           </h1>
           <p class="mb-4 uppercase">{{ tag.description }}</p>
 
@@ -30,7 +30,7 @@
       <NuxtLink to="/"
         ><p class="hover:underline">Back to All Articles</p></NuxtLink
       >
-      <h3 class="mb-4 font-bold text-4xl">Articles tagged {{ tag.title }}:</h3>
+      <h3 class="mb-4 font-bold text-4xl">Articles tagged {{ tag.name }}:</h3>
       <ul>
         <li
           v-for="article in articles"
@@ -72,7 +72,7 @@ export default {
       .sortBy('createdAt', 'asc')
       .fetch()
     const tags = await $content('tags')
-      .where({ title: { $contains: params.tag } })
+      .where({ name: { $contains: params.tag } })
       .limit(1)
       .fetch()
     const tag = tags.length > 0 ? tags[0] : {}
