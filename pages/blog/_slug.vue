@@ -19,6 +19,15 @@
           <p>{{ article.author.name }}</p>
         </div>
         <h1 class="text-6xl font-bold">{{ article.title }}</h1>
+        <span v-for="(tag, id) in article.tags" :key="id">
+          <NuxtLink :to="`/blog/tag/${tag}`">
+            <span
+              class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear"
+            >
+              {{ tag }}
+            </span>
+          </NuxtLink>
+        </span>
       </div>
       <div class="flex absolute top-3rem right-3rem">
         <NuxtLink
