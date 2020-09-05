@@ -19,6 +19,15 @@
           <p>{{ article.author.name }}</p>
         </div>
         <h1 class="text-6xl font-bold">{{ article.title }}</h1>
+        <span v-for="(tag, id) in article.tags" :key="id">
+          <NuxtLink :to="`/blog/tag/${tags[tag].slug}`">
+            <span
+              class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear"
+            >
+              {{ tags[tag].name }}
+            </span>
+          </NuxtLink>
+        </span>
       </div>
       <div class="flex absolute top-3rem right-3rem">
         <NuxtLink
@@ -77,6 +86,11 @@
 export default {
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
+    const tagsList = await $content('tags')
+      .only(['name', 'slug'])
+      .where({ name: { $containsAny: article.tags } })
+      .fetch()
+    const tags = Object.assign({}, ...tagsList.map((s) => ({ [s.name]: s })))
     const [prev, next] = await $content('articles')
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')
@@ -84,6 +98,7 @@ export default {
       .fetch()
     return {
       article,
+      tags,
       prev,
       next
     }
