@@ -2,7 +2,7 @@
   <div class="m-8">
     <TheHeader />
 
-    <h1 class="font-bold text-4xl"></h1>
+    <h1 class="font-bold text-4xl"><Blog/h1>
     <ul class="flex flex-wrap">
       <li
         v-for="article of articles"
