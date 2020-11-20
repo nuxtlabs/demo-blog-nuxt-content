@@ -51,7 +51,7 @@
       <p class="mt-4">
         Created by
         <a
-          href="https://twitter.com/debs_obrien"
+          href="https://twitter.com/Peter_Greaney"
           class="font-bold hover:underline"
           >Peter Greaney</a
         >
