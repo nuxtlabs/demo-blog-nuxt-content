@@ -53,15 +53,9 @@
         <a
           href="https://twitter.com/debs_obrien"
           class="font-bold hover:underline"
-          >Debbie O'Brien</a
+          >Waspy</a
         >
-        at NuxtJS. See the
-        <a
-          href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content"
-          class="font-bold hover:underline"
-          >tutorial</a
-        >
-        for how to build it.
+        at NuxtJS.
       </p>
     </footer>
   </div>
