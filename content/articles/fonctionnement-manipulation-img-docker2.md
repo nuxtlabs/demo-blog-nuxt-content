@@ -1,7 +1,6 @@
 ---
-title: Fonctionnement et manipulation des images Docker
-description: Docker
-img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+title: Fonctionnement et manipulation des images Docker 2
+img: https://www.claranet.fr/sites/all/assets/fr/8_docker_puissant_outil_devops.jpg
 alt: nice image
 author: 
   name: ajdaini-hatim
@@ -10,13 +9,10 @@ author:
 tags: 
   - docker
 ---
-Fonctionnement et manipulation des images Docker
-================================================
 
 Aujourd'hui, vous allez apprendre le fonctionnement et la manipulation des images Docker. Vous saurez ainsi comment lister, télécharger, supprimer et rechercher des images Docker. Enfin vous allez découvrir quelques commandes pour récolter des informations sur votre installation Docker.
 
-Qu'est qu'une image Docker
---------------------------
+## Qu'est qu'une image Docker
 
 Sur Docker, **un conteneur est lancé en exécutant une image**. "Attends mais **c'est quoi une image Docker**" ?
 
