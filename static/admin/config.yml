@@ -58,10 +58,11 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Image Alt", name: "alt", widget: "string" }
+      - { label: "Image Alt", name: "alt", widget: "string", required: false }
       - label: "Author"
         name: "author"
         widget: "object"
+        required: true
         fields:
             - {label: Name, name: name, widget: string}
             - {label: BIO, name: bio, widget: string}
@@ -74,8 +75,13 @@ collections:
             }
       - label: "Tags"
         name: "tags"
-        widget: "list"
-        field: {label: Name, name: name, widget: string, default: "tag"}
+        collection: "tags"
+        widget: "relation"
+        multiple: true
+        search_fields: ["name"]
+        display_fields: ["name"]
+        value_field: "{{slug}}"
+        # field: {label: Name, name: name, widget: string, default: "tag"}
       - {
           label: "Cover Image",
           name: "img",
