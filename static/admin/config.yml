@@ -1,0 +1,124 @@
+site_url: https://ntn-boilerplate.netlify.app/
+logo_url: https://ntn-boilerplate.netlify.app/icon.png
+
+# publish_mode: editorial_workflow
+backend:
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+# Docs: https://www.netlifycms.org/docs/configuration-options/#collections
+collections:
+  - label: "Site settings"
+    name: "site"
+    files:
+      - label: "Info"
+        name: "info"
+        file: "assets/site/info.json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+          - {
+              label: Site Name,
+              name: sitename,
+              widget: string,
+              hint: "This is used for the site title",
+            }
+          - {
+              label: Site Description,
+              name: sitedescription,
+              widget: string,
+              hint: "This is used as descriptive text for links that link to this site",
+            }
+          - {
+              label: Site Language,
+              name: sitelang,
+              widget: string,
+              pattern:
+                [
+                  "^[a-z]{2}([-])?([A-Za-z]{2})?$",
+                  'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")',
+                ],
+            }
+          # - { label: Site Email, name: siteemail, widget: string, required: false }
+  - name: "articles"
+    label: "Articles"
+    # identifier_field: name
+    folder: "content/articles"
+    create: true
+    format: "frontmatter"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    # editor:
+    #   preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image Alt", name: "alt", widget: "string" }
+      - label: "Author"
+        name: "author"
+        widget: "object"
+        fields:
+            - {label: Name, name: name, widget: string}
+            - {label: BIO, name: bio, widget: string}
+            - {
+              label: "Cover Image",
+              name: "img",
+              widget: "image",
+              required: false,
+              allow_multiple: false,
+            }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: {label: Name, name: name, widget: string, default: "tag"}
+      - {
+          label: "Cover Image",
+          name: "img",
+          widget: "image",
+          required: false,
+          allow_multiple: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "tags"
+    label: "Tags"
+    # identifier_field: name
+    folder: "content/tags"
+    create: true
+    format: "frontmatter"
+    slug: "{{slug}}"
+    # editor:
+    #   preview: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Cover Image",
+          name: "img",
+          widget: "image",
+          required: false,
+          allow_multiple: false,
+        }
+  # - name: "tags"
+  #   # identifier_field: name
+  #   label: "Tags"
+  #   # label_singular: "Tags"
+  #   folder: content/tags"
+  #   create: true
+  #   format: "frontmatter"
+  #   slug: "{{slug}}"
+  #   # preview_path: "tags/{{slug}}"
+  #   fields:
+  #     - { label: "Name", name: "name", widget: "string" }
+  #     - { label: "Description", name: "description", widget: "string" }
+  #     - {
+  #         label: "Cover Image",
+  #         name: "img",
+  #         widget: "image",
+  #         required: false,
+  #         allow_multiple: false,
+  #       }
