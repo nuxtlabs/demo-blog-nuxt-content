@@ -19,6 +19,10 @@ export default {
     // subFolders: false,
     dir: 'public'
   },
+  router: {
+    // eslint-disable-next-line spaced-comment
+    //base: 'PATHPREFIXTOREPLACE'
+  },
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head

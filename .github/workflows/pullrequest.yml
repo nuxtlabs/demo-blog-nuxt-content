@@ -1,0 +1,31 @@
+name: Pull_Request
+on:
+  pull_request:
+    branches:
+      - master
+
+env:
+  pathPrefix: ${{ secrets.PATHPREFIX }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Install and Build
+        run: |
+          ls
+          export pathPrefix=${{ env.pathPrefix }}
+          sed -i "s/\/\/base/base/g" ./nuxt.config.js
+          echo sed -i "s/PATHPREFIXTOREPLACE/$pathPrefix/g" nuxt.config.js
+          sed -i "s/PATHPREFIXTOREPLACE/$pathPrefix/g" ./nuxt.config.js
+          cat nuxt.config.js
+          npm install
+          npm run generate
+
+      - uses: actions/upload-artifact@v1
+        with:
+          name: site
+          path: public

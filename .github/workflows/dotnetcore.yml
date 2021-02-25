@@ -1,0 +1,60 @@
+name: Build and Deploy
+on:
+  # pull_request:
+  #   branches:
+  #     - master
+  push:
+    branches:
+      - master
+env:
+  pathPrefix: ${{ secrets.PATHPREFIX }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      # update pathPrefix in settings > secrets
+      # must be all caps
+      # need to escape /, e.g. PATHPREFIX = \\/netlify-cms-nuxt
+      - name: Install and Build
+        run: |
+          ls
+          export pathPrefix=${{ env.pathPrefix }}
+          echo sed -i "s/\/\/base/base/g" nuxt.config.js
+          sed -i "s/\/\/base/base/g" nuxt.config.js
+          echo sed -i "s/PATHPREFIXTOREPLACE/$pathPrefix/g" nuxt.config.js
+          sed -i "s/PATHPREFIXTOREPLACE/$pathPrefix/g" nuxt.config.js
+          cat nuxt.config.js
+          npm install
+          npm run generate
+
+      - uses: actions/upload-artifact@v1
+        with:
+          name: site
+          path: public
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      # should not be needed, but the way github pages work is that it must be a git repo
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Download a single artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: site
+          path: public
+
+      # basically overrides the gh-pages branch w/ contents of public
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.
+
