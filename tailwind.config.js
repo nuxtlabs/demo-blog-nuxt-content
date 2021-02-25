@@ -21,20 +21,20 @@ module.exports = {
     },
     borderWidth: {
       default: '1px',
-      '0': '0',
-      '2': '2px',
-      '4': '4px'
+      0: '0',
+      2: '2px',
+      4: '4px'
     },
     extend: {
       colors: {
         cyan: '#9cdbff'
       },
       spacing: {
-        '96': '24rem',
-        '128': '32rem'
+        96: '24rem',
+        128: '32rem'
       },
       height: {
-        '84': '22rem'
+        84: '22rem'
       },
       width: {
         '3/2': '150%',
@@ -46,10 +46,10 @@ module.exports = {
       }
     },
     inset: {
-      '0': 0,
-      '16': '16px',
-      '32': '32px',
-      '64': '64px',
+      0: 0,
+      16: '16px',
+      32: '32px',
+      64: '64px',
       '2rem': '2rem',
       '3rem': '3rem'
     }
