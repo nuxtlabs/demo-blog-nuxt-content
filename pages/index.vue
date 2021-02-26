@@ -31,7 +31,7 @@
         </NuxtLink>
       </li>
     </ul>
-    <h3 class="mb-4 font-bold text-2xl uppercase text-center">Topics</h3>
+    <h3 class="mb-4 font-bold text-2xl uppercase text-center text-pink-800">Topics</h3>
     <ul class="flex flex-wrap mb-4 text-center">
       <li
         v-for="tag of tags"
@@ -52,10 +52,9 @@
         Created by
         <a
           href="https://twitter.com/debs_obrien"
-          class="font-bold hover:underline"
+          class="font-bold hover:underline text-pink-800"
           >Waspy</a
         >
-        at NuxtJS.
       </p>
     </footer>
   </div>
