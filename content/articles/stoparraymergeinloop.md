@@ -7,7 +7,7 @@ author:
   bio: All about Baby Yoda and what he does and where he works
   img: https://www.jimmyklein.fr/avatar.jpg
 tags: 
-  - docker
+  - php
 ---
 
 Je vois assez souvent dans du code PHP l'utilisation de la fonction `array_merge` dans des boucles `for`/`foreach`/`while` 😱 :
