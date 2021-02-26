@@ -22,7 +22,7 @@
           <div
             class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full"
           >
-            <h2 class="font-bold">{{ article.title }}</h2>
+            <h2 class="font-bold text-pink-800">{{ article.title }}</h2>
             <p>by {{ article.author.name }}</p>
             <p class="font-bold text-gray-600 text-sm">
               {{ article.description }}
@@ -40,7 +40,7 @@
       >
         <NuxtLink :to="`/blog/tag/${tag.slug}`" class="">
           <p
-            class="font-bold text-gray-600 uppercase tracking-wider font-medium text-ss"
+            class="font-bold text-pink-800 uppercase tracking-wider font-medium text-ss"
           >
             {{ tag.name }}
           </p>
