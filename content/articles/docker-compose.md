@@ -4,8 +4,8 @@ img: https://www.claranet.fr/sites/all/assets/fr/8_docker_puissant_outil_devops.
 alt: nice image
 author: 
   name: ajdaini-hatim
-  bio: All about Baby Yoda and what he does and where he works
-  img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
+  bio: DEVOPS Consultant Infrastructure
+  img: https://devopssec.fr/media/cache/avatar/images/profiles/5fe5e8b70ffba193794895.jpg
 tags: 
   - docker
 ---

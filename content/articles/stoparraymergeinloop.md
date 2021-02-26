@@ -3,9 +3,9 @@ title: Evitez d'utiliser la fonction array_merge dans une boucle en PHP
 img: https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2012/04/Blog_What-is-php.jpg
 alt: nice image
 author: 
-  name: ajdaini-hatim
+  name: Jimmy KLEIN
   bio: All about Baby Yoda and what he does and where he works
-  img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
+  img: https://www.jimmyklein.fr/avatar.jpg
 tags: 
   - docker
 ---
