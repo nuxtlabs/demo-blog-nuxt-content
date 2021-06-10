@@ -12,7 +12,7 @@
 
     <div class="overlay"></div>
     <div class="absolute top-32 left-32 text-white">
-      <NuxtLink to="/"><Logo /></NuxtLink>
+      <NuxtLink to="/"><h1 class="font-bold text-4xl">Tim Willis</h1></NuxtLink>
       <div class="mt-16 -mb-3 flex flex-col uppercase text-sm">
         <h1 class="text-4xl font-bold">
           {{ articles[0].author.name }}
