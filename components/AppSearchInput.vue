@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       searchQuery: '',
-      articles: []
+      articles: [],
     }
   },
   watch: {
@@ -36,11 +36,8 @@ export default {
         this.articles = []
         return
       }
-      this.articles = await this.$content('articles')
-        .limit(6)
-        .search(searchQuery)
-        .fetch()
-    }
-  }
+      this.articles = await this.$content('articles').limit(6).search(searchQuery).fetch()
+    },
+  },
 }
 </script>

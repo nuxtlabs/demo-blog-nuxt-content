@@ -24,12 +24,12 @@ export default {
   props: {
     prev: {
       type: Object,
-      default: () => null
+      default: () => null,
     },
     next: {
       type: Object,
-      default: () => null
-    }
-  }
+      default: () => null,
+    },
+  },
 }
 </script>

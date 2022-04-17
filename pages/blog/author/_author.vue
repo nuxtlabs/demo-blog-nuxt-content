@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex lg:h-screen w-screen lg:overflow-hidden xs:flex-col lg:flex-row"
-  >
+  <div class="flex lg:h-screen w-screen lg:overflow-hidden xs:flex-col lg:flex-row">
     <div class="relative lg:w-1/2 xs:w-full xs:h-84 lg:h-full post-left">
       <img
         :src="articles[0].author.img"
@@ -23,9 +21,7 @@
     <div
       class="relative xs:py-8 xs:px-8 lg:py-32 lg:px-16 lg:w-1/2 xs:w-full h-full overflow-y-scroll markdown-body post-right custom-scroll"
     >
-      <NuxtLink to="/"
-        ><p class="hover:underline">Back to All Articles</p></NuxtLink
-      >
+      <NuxtLink to="/"><p class="hover:underline">Back to All Articles</p></NuxtLink>
       <h3 class="mb-4 font-bold text-4xl">
         Here are a list of articles by {{ articles[0].author.name }}:
       </h3>
@@ -46,9 +42,7 @@
               :alt="article.alt"
             />
 
-            <div
-              class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full"
-            >
+            <div class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full">
               <h2 class="font-bold">{{ article.title }}</h2>
               <p>{{ article.description }}</p>
               <p class="font-bold text-gray-600 text-sm">
@@ -68,21 +62,21 @@ export default {
     const articles = await $content('articles')
       .where({
         'author.name': {
-          $regex: [params.author, 'i']
-        }
+          $regex: [params.author, 'i'],
+        },
       })
       .without('body')
       .sortBy('createdAt', 'asc')
       .fetch()
     return {
-      articles
+      articles,
     }
   },
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
-    }
-  }
+    },
+  },
 }
 </script>
