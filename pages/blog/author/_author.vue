@@ -10,7 +10,9 @@
 
     <div class="overlay"></div>
     <div class="absolute top-32 left-32 text-white">
-      <NuxtLink to="/"><Logo /></NuxtLink>
+      <NuxtLink to="/">
+        <Logo />
+      </NuxtLink>
       <div class="mt-16 -mb-3 flex flex-col uppercase text-sm">
         <h1 class="text-4xl font-bold">
           {{ articles[0].author.name }}
@@ -22,9 +24,7 @@
       class="relative xs:py-8 xs:px-8 lg:py-32 lg:px-16 lg:w-1/2 xs:w-full h-full overflow-y-scroll markdown-body post-right custom-scroll"
     >
       <NuxtLink to="/"><p class="hover:underline">Back to All Articles</p></NuxtLink>
-      <h3 class="mb-4 font-bold text-4xl">
-        Here are a list of articles by {{ articles[0].author.name }}:
-      </h3>
+      <h3 class="mb-4 font-bold text-4xl">Articles by {{ articles[0].author.name }}:</h3>
       <ul>
         <li
           v-for="article in articles"

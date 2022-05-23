@@ -1,6 +1,6 @@
 {
-  "name": "nuxt-content-article",
-  "version": "1.0.0",
+  "name": "bn-space",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
