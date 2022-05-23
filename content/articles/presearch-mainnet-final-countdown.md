@@ -1,17 +1,19 @@
 ---
-title: Great Article aaa
+title: Presearch final countdown to Mainnet
 description: I am a description of a great article
 img: https://images.unsplash.com/photo-1588514727390-91fd5ebaef81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=639&q=80
 alt: article 7
-publish: false
+publish: true
 author: 
-  name: Maria
-  bio: All about Maria and where she works and what she does
-  img: https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2551&q=80
+  name: B. Antonia
+  bio: |
+    🧠 Neuroscience student
+    🦸🏼 Goal digger 
+  img: https://pbs.twimg.com/profile_images/1524849452304965632/quS90JQ9_400x400.jpg
 tags: 
   - web development
 ---
-## Hello this article is great
+## Presearch final countdown to Mainnet
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
 
