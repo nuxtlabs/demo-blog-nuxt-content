@@ -98,6 +98,11 @@ export default {
       next,
     }
   },
+  head() {
+    return {
+      title: `${this.article.title} | Bᴺ Space`,
+    }
+  },
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
