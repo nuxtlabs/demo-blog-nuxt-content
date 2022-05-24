@@ -61,6 +61,7 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles')
       .where({
+        draft: { $ne: true },
         'author.name': {
           $regex: [params.author, 'i'],
         },
