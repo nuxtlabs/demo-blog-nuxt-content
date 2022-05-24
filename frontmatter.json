@@ -4,11 +4,15 @@
   "frontMatter.content.publicFolder": "static",
   "frontMatter.content.pageFolders": [
     {
-      "path": "[[workspace]]/content/tags"
-    },
-    {
       "title": "articles",
       "path": "[[workspace]]/content/articles"
+    },
+    {
+      "title": "tags",
+      "path": "[[workspace]]/content/tags"
     }
-  ]
+  ],
+  "frontMatter.content.autoUpdateDate": false,
+  "frontMatter.content.fmHighlight": true,
+  "frontMatter.framework.startCommand": "yarn dev"
 }

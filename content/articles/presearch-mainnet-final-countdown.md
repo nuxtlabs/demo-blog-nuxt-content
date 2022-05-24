@@ -7,37 +7,40 @@ author:
   name: B. Antonia
   bio: |
     🧠 Neuroscience student
-    🦸🏼 Goal digger 
+    🦸🏼 Goal digger
   img: https://pbs.twimg.com/profile_images/1524849452304965632/quS90JQ9_400x400.jpg
 tags:
-  - web development
+  - search engine
+  - blockchain
+  - decentralization
+  - presearch
 date: 2022-05-24T08:25:24.510Z
 draft: false
 ---
 
 ## Presearch final countdown to Mainnet
 
-Presearch, a decentralized search engine powered by blockchain technology, is ready for the next big step. 
+> Presearch, a decentralized search engine powered by blockchain technology, is ready for the next big step.
 
 In less than a month, Presearch will launch its mainnet, switching to a fully decentralized network run on node servers operated by the community members. We have been closely following the project development as node operators ourselves over the past few months and are very excited about the launch.
 
-When is the Mainnet launch planned? 
+When is the Mainnet launch planned?
 
 Leading to the Mainnet launch, 2021 was a busy year for the Presearch and "one of the most successful in the project's history" according to the team.
-The launch was first planned for the end of Apri, however, it has been postponed. The good news is that now we have an actual date to be looking forward to. The official mainnet launch is scheduled for the 26th May, in less than three weeks' time. 
+The launch was first planned for the end of Apri, however, it has been postponed. The good news is that now we have an actual date to be looking forward to. The official mainnet launch is scheduled for the 26th May, in less than three weeks' time.
 
 What to expect as a node runner and searcher as we approach the official launch
 
 The transition to Mainnet began on 5th April 2022. We have seen many network tests over the past few weeks. More production traffic has been directed from the current centralized node environment to the decentralized nodes operated by community members. With the Mainnet launch, all search queries will be permanently routed to decentralized community-run nodes.
 
-Node operators with good reliability scores already began to see sporadic increases in the number of queries their nodes receive (at first short durations of increased traffic, targeted at testing various platform components). 
+Node operators with good reliability scores already began to see sporadic increases in the number of queries their nodes receive (at first short durations of increased traffic, targeted at testing various platform components).
 
 Regarding rewards and reliability scores, the model has been updated from 'equal traffic, uneven rewards to a 'queries-served' model that will route more traffic to nodes with higher reliability scores but will then provide equal rewards each period for all successful and rewardable searches. The new model emphasizes the quality of the search results from each node. Smart node routing allows network performance optimization to deliver a more stable and end-user-optimized experience. (read more in the article https://news.presearch.io/mainnet-launch-timeline-d66b93f5ed3c)
 
-What else is coming before the Mainnet: 
-The gateways will be distributed geographically. Nodes are being "automatically assigned to a region based on a combination of latency and global traffic and capacity needs, with the ability to override the default region assignment if desired." Some time is expected before the traffic and rewards stabilize. 
+What else is coming before the Mainnet:
+The gateways will be distributed geographically. Nodes are being "automatically assigned to a region based on a combination of latency and global traffic and capacity needs, with the ability to override the default region assignment if desired." Some time is expected before the traffic and rewards stabilize.
 
-As a searcher, you may occasionally experience hiccups, such as no results found, partial results, or slow loading times. Just be patient. It's all worth it. 
+As a searcher, you may occasionally experience hiccups, such as no results found, partial results, or slow loading times. Just be patient. It's all worth it.
 
 Our team at BN has been operating nodes for around a year. From our experience with the tech, we primarily learned/appreciate:
 

@@ -1,11 +1,7 @@
 <template>
   <div class="flex lg:h-screen w-screen lg:overflow-hidden xs:flex-col lg:flex-row">
     <div class="relative lg:w-1/2 xs:w-full xs:h-84 lg:h-full post-left">
-      <img
-        :src="articles[0].author.img"
-        :alt="articles[0].author.name"
-        class="absolute h-full w-full object-cover"
-      />
+      <img :src="articles[0].author.img" :alt="articles[0].author.name" class="absolute h-full w-full object-cover" />
     </div>
 
     <div class="overlay"></div>
@@ -26,11 +22,7 @@
       <NuxtLink to="/"><p class="hover:underline">Back to All Articles</p></NuxtLink>
       <h3 class="mb-4 font-bold text-4xl">Articles by {{ articles[0].author.name }}:</h3>
       <ul>
-        <li
-          v-for="article in articles"
-          :key="article.slug"
-          class="w-full px-2 xs:mb-6 md:mb-12 article-card"
-        >
+        <li v-for="article in articles" :key="article.slug" class="w-full px-2 xs:mb-6 md:mb-12 article-card">
           <NuxtLink
             :to="{ name: 'blog-slug', params: { slug: article.slug } }"
             class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"

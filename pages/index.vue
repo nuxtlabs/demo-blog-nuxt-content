@@ -4,20 +4,12 @@
 
     <h1 class="font-bold text-4xl">Blog Posts</h1>
     <ul class="flex flex-wrap">
-      <li
-        v-for="article of articles"
-        :key="article.slug"
-        class="xs:w-full md:w-1/2 px-2 xs:mb-6 md:mb-12 article-card"
-      >
+      <li v-for="article of articles" :key="article.slug" class="xs:w-full md:w-1/2 px-2 xs:mb-6 md:mb-12 article-card">
         <NuxtLink
           :to="{ name: 'blog-slug', params: { slug: article.slug } }"
           class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
         >
-          <img
-            v-if="article.img"
-            class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
-            :src="article.img"
-          />
+          <img v-if="article.img" class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover" :src="article.img" />
 
           <div class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full">
             <h2 class="font-bold">{{ article.title }}</h2>
@@ -44,11 +36,7 @@
     <footer class="flex justify-center border-gray-500 border-t-2">
       <p class="mt-4">
         Created with
-        <a
-          href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content"
-          class="font-bold hover:underline"
-          >NuxtJS</a
-        >
+        <a href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content" class="font-bold hover:underline">NuxtJS</a>
       </p>
     </footer>
   </div>
@@ -62,10 +50,7 @@ export default {
       .only(['title', 'description', 'img', 'slug', 'author'])
       .sortBy('createdAt', 'desc')
       .fetch()
-    const tags = await $content('tags')
-      .only(['name', 'description', 'img', 'slug'])
-      .sortBy('createdAt', 'asc')
-      .fetch()
+    const tags = await $content('tags').only(['name', 'description', 'img', 'slug']).sortBy('createdAt', 'asc').fetch()
     return {
       articles,
       tags,
