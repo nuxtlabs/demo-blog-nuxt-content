@@ -1,0 +1,14 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "nuxt",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/content/tags"
+    },
+    {
+      "title": "articles",
+      "path": "[[workspace]]/content/articles"
+    }
+  ]
+}
