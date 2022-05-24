@@ -15,26 +15,18 @@
           <p>{{ article.author.name }}</p>
         </div>
         <h1 class="text-6xl font-bold">{{ article.title }}</h1>
-        <span v-for="(tag, id) in article.tags" :key="id">
-          <NuxtLink :to="`/blog/tag/${tags[tag].slug}`">
+        <span v-for="(tag, id) in tags" :key="id">
+          <NuxtLink :to="`/blog/tag/${tag.slug}`">
             <span
               class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear"
             >
-              {{ tags[tag].name }}
+              {{ tag.name }}
             </span>
           </NuxtLink>
         </span>
       </div>
       <div class="flex absolute top-3rem right-3rem">
-        <NuxtLink to="/" class="mr-8 self-center text-white font-bold hover:underline">
-          All articles
-        </NuxtLink>
-        <a
-          href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content"
-          class="mr-8 self-center text-white font-bold hover:underline"
-        >
-          Tutorial
-        </a>
+        <NuxtLink to="/" class="mr-8 self-center text-white font-bold hover:underline"> All articles </NuxtLink>
         <AppSearchInput />
       </div>
     </div>
@@ -42,7 +34,6 @@
       class="relative xs:py-8 xs:px-8 lg:py-32 lg:px-16 lg:w-1/2 xs:w-full h-full overflow-y-scroll markdown-body post-right custom-scroll"
     >
       <h1 class="font-bold text-4xl">{{ article.title }}</h1>
-      <p>{{ article.description || '' }}</p>
       <p class="pb-4">Post last updated: {{ formatDate(article.updatedAt) }}</p>
       <!-- table of contents -->
       <nav v-if="article.showToc" class="pb-6">
@@ -67,7 +58,7 @@
         </ul>
       </nav>
       <!-- content from markdown -->
-      <nuxt-content :document="article" />
+      <nuxt-content :document="article" class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl" />
       <!-- content author component -->
       <author :author="article.author" />
       <!-- prevNext component -->
@@ -78,7 +69,9 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch()
+    const article = await $content('articles', params.slug)
+      .where({ draft: { $ne: true } })
+      .fetch()
     let tags
     // Fallback for tags
     if (article.tags) {
@@ -92,6 +85,7 @@ export default {
       tags = []
     }
     const [prev, next] = await $content('articles')
+      .where({ draft: { $ne: true } })
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')
       .surround(params.slug)
@@ -101,6 +95,15 @@ export default {
       tags,
       prev,
       next,
+    }
+  },
+  head() {
+    return {
+      title: `${this.article.title} | Bᴺ Space`,
+      meta: [
+        { hid: 'description', name: 'description', content: this.article.description || '' },
+        { hid: 'og-image', name: 'og:image', content: this.article.img || '' },
+      ],
     }
   },
   methods: {

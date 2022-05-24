@@ -2,13 +2,15 @@
 
 ## Common
 
-- [ ] Update Logo and bran to Bᴺ Space
+- [ ] Upgrade packages: tailwind, etc
 
 ## Functionality
 
 - [ ] Use authors.json to define authors. User id or username can then be used in article
 
-## Content
+## Content / Style
 
-- [ ] Remove old articles
 - [ ] Update welcome article
+- [ ] improve SEO: slugs, header, etc
+- [ ] Use own images
+- [ ] More links to social channels

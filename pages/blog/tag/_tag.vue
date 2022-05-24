@@ -6,7 +6,9 @@
 
     <div class="overlay"></div>
     <div class="absolute top-32 left-32 right-32 text-white">
-      <NuxtLink to="/"><Logo /></NuxtLink>
+      <NuxtLink to="/">
+        <Logo />
+      </NuxtLink>
       <div class="mt-16 -mb-3 flex flex-col text-sm">
         <div class="relative lg:w-1/2 xs:w-full xs:h-84 lg:h-full post-left">
           <h1 class="text-4xl font-bold uppercase">
@@ -24,11 +26,7 @@
       <NuxtLink to="/"><p class="hover:underline">Back to All Articles</p></NuxtLink>
       <h3 class="mb-4 font-bold text-4xl">Articles tagged {{ tag.name }}:</h3>
       <ul>
-        <li
-          v-for="article in articles"
-          :key="article.slug"
-          class="w-full px-2 xs:mb-6 md:mb-12 article-card"
-        >
+        <li v-for="article in articles" :key="article.slug" class="w-full px-2 xs:mb-6 md:mb-12 article-card">
           <NuxtLink
             :to="{ name: 'blog-slug', params: { slug: article.slug } }"
             class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
@@ -63,7 +61,7 @@ export default {
       .fetch()
     const tag = tags.length > 0 ? tags[0] : {}
     const articles = await $content('articles')
-      .where({ tags: { $contains: tag.name } })
+      .where({ draft: { $ne: true }, tags: { $contains: tag.name } })
       .sortBy('createdAt', 'asc')
       .fetch()
     return {

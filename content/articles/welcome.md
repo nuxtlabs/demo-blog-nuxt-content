@@ -1,14 +1,14 @@
 ---
 title: Welcome To Bᴺ Space!
-description: ''
+description: ""
 img: /images/2017/11/nour.space.bg1.jpg
 alt: Article 6
-publish: true
 showToc: false
-author: 
+author:
   name: Nour
-  bio: 
+  bio: null
   img: /images/2017/11/nour.jpg
+draft: true
 ---
 
 we are bn space
@@ -16,7 +16,9 @@ we are bn space
 
 ### [Ghost!](https://ghost.org)
 
-I have to admit; It took me much longer than I anticipated until I managed to put this blog online. Choosing a blogging
+I have to admit; It took me much longer than I anticipated until I managed to put this blog online.  
+
+Choosing a blogging
 platform wasn't an easy pick considering the many out there. On the other hand deploying it was reasonably
 straightforward, talking from a developer's perspective.
 
