@@ -1,14 +1,14 @@
 ---
 title: Welcome To Bᴺ Space!
-description: ''
+description: ""
 img: /images/2017/11/nour.space.bg1.jpg
 alt: Article 6
-publish: false
 showToc: false
-author: 
+author:
   name: Nour
-  bio: 
+  bio: null
   img: /images/2017/11/nour.jpg
+draft: true
 ---
 
 we are bn space
