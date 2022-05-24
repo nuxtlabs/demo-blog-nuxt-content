@@ -2,7 +2,7 @@
 
 ## Common
 
-- [ ] Update Logo and bran to Bᴺ Space
+- [ ] Upgrade packages: tailwind, etc
 
 ## Functionality
 
@@ -10,5 +10,4 @@
 
 ## Content
 
-- [ ] Remove old articles
 - [ ] Update welcome article
