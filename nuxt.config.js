@@ -29,7 +29,9 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [
+    '~/plugins/google-analytics.client.js', // only in client
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
