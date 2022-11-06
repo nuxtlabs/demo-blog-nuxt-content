@@ -8,7 +8,7 @@ author:
   bio: |
     🧠 Neuroscience student
     🦸🏼 Goal digger
-  img: https://pbs.twimg.com/profile_images/1524849452304965632/quS90JQ9_400x400.jpg
+  img: /authors/bantonia.png
 tags:
   - ethereum
   - crypto

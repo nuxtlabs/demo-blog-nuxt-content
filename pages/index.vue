@@ -13,7 +13,10 @@
 
           <div class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full">
             <h2 class="font-bold">{{ article.title }}</h2>
-            <p>by {{ article.author.name }}</p>
+            <p>
+              <span class="text-gray-700">{{ article.author.name }}</span>
+              <span class="text-gray-500 float-right">{{ $formatDate(article.date) }}</span>
+            </p>
             <p class="font-bold text-gray-600 text-sm">
               {{ article.description }}
             </p>
@@ -48,8 +51,8 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles')
       .where({ draft: { $ne: true } })
-      .only(['title', 'description', 'img', 'slug', 'author'])
-      .sortBy('createdAt', 'desc')
+      .only(['title', 'description', 'img', 'slug', 'author', 'date'])
+      .sortBy('date', 'desc')
       .fetch()
     const tags = await $content('tags').only(['name', 'description', 'img', 'slug']).sortBy('createdAt', 'asc').fetch()
     return {

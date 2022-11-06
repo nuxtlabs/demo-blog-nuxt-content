@@ -42,6 +42,7 @@
     "stylelint": "13.8.0",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "20.0.0",
-    "vue-gtag": "1.16.1"
+    "vue-gtag": "1.16.1",
+    "tailwindcss-textshadow": "^2.1.3"
   }
 }
