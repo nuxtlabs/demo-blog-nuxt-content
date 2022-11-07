@@ -73,25 +73,25 @@ dollar
 
 ### Consumers, Investors, & Businesses Protection
 
-The Fact sheet focuses on volatility, lack of transparency. They are not mentioning rewards and benefits at all.
-According to FBI research, scams, fraud, etc in crypto climbed 600% in 2021 than in 2020. Let's not get confused here.
-The crypto prices were much higher and therefore the total amount fiat money lost do due to crime increased.
-The Fact sheet doesn't present many facts and stats to support its claims!
+The Fact sheet focuses on volatility and lack of transparency in crypto. They are not mentioning rewards and benefits at all.
+According to FBI research, scams, fraud, etc in crypto climbed 600% in 2021 as compared to 2020. Let's not get confused here.
+The crypto prices were much higher and therefore the total value lost in fiat money due to crime increased.
+The Fact sheet doesn't present many facts and stats to support its claims.
 
 #### Steps
 
-- Instructs SEC (security exchange commission) and the CFTC (commodities future trading commission) to "aggressively
-  pursue investigations and legal actions against crypto projects and companies"
+- Instruct SEC (Security Exchange Commission) and the CFTC (Commodities Future Trading Commission) to "aggressively
+  pursue investigations and legal actions against crypto projects and companies". - Fact Sheet
 
-- Instruct CFPB (Consumer Financial Protection Bureau and FTC (Federal trade commission) "monitor consumer complaints
-  and to enforce against unfair, deceptive or abusive practices"
+- Instruct CFPB (Consumer Financial Protection Bureau and FTC (Federal trade commission) to "monitor consumer complaints
+  and to enforce against unfair, deceptive or abusive practices". - Fact Sheet
 
 - CFPB is one of the organisations that were created as a part of the Dot Frank Act in 2010. This is an act put together
   by Michael Bar in the aftermath of the 2008 financial crisis, Bar is Vice Chair of supervision at the FED. This
-  position was also created by the Dot Frank Act.
+  position was created by the Dot Frank Act itself.
 
-- "Address current and emerging risks in the cryptocurrency" without clarifying the "risks" instruct the FLAG (Financial
-  Literacy Education Commission) to "help consumers understand the risks involved".
+- "Address current and emerging risks in the cryptocurrency" and instruct the FLAG (Financial
+  Literacy Education Commission) to "help consumers understand the risks involved". - Fact Sheet
 
 > Similarities can be seen with the IMF campaign to "educate" about CBDC and discredit crypto.
 
@@ -111,7 +111,7 @@ FedNow in the context of the distribution of disaster, emergency or other govern
 
 <sub>Coinbureau</sub>
 
-Due to no competition the second step will be to instruct regulators to crack down on non-banking entities presumably
+Due to no competition, the second step will be to instruct regulators to crack down on non-banking entities presumably
 including cryptocurrency exchanges aligning global payments practices and supervision protocols. There seems to be no
 escape from these dystopian systems.
 
@@ -123,7 +123,7 @@ figure out how to convince people. They expect 12% of people in the developed wo
 Crypto and existing financial systems are becoming more connected with stable coins leading the way.
 
 > Regulators are afraid of stablecoins because most are backed by US government debt. If they become too big and there
-> is a run on a stablecoin issuer they could dump these treasuries assets on the open market.
+> is a run on a stablecoin issuer they could dump these treasury assets on the open market.
 
 > Using Terra UST example is silly to demonstrate how much damage crypto could do to the US financial system.
 
@@ -153,7 +153,7 @@ are not uncommon.
 
 #### Steps
 
-- Instructs office OSTP (Office of Science and Technology Policy) to create digital assets research and development
+- Instruct office OSTP (Office of Science and Technology Policy) to create digital assets research and development
   agenda.
   NSF (National Science Foundation) will back social science and education research that develops methods of informing,
   educating and training diverse groups of stakeholders.
@@ -164,65 +164,62 @@ are not uncommon.
 
 - Instruct various environmental regulators to "track digital assets environmental impacts, develop performance
   standards as appropriate and provide local authorities with the tools, resources and expertise to mitigate the
-  environmental harms".
+  environmental harms". 
 
-  **"Opportunities exist to align the development of digital assets with transitioning to a net-zero emissions economy
-  and improving environmental justice."**
+  "Opportunities exist to align the development of digital assets with transitioning to a net-zero emissions economy
+  and improving environmental justice." - Fact Sheet
 
 - The fourth step includes "... establishing a standing forum to convene federal agencies, industry, academics, and
   civil society to exchange knowledge and ideas that could inform federal regulation, standards, coordinating
-  activities, technical assistance, and research support."
+  activities, technical assistance, and research support." - Fact Sheet
 
-  Getting everyone on board seems likely a sign that government feels threatened by crypto.
+  Getting everyone on board seems likely a sign that the government feels threatened by crypto.
 
 ### The US As The Leader Of The Status Quo Of Global Finance As Well The Country’s Financial Competitiveness
 
 This point includes cooperating with unelected organisations like FATF (Financial Action Task Force) to establish global
-financial leadership to bringing the US values into cryptocurrency.
+financial leadership to bring the US values into cryptocurrency.
 
 > Note, this is code for financial control and financial surveillance not freedom and liberty.
 
 <sub>Coinbureau</sub>
 
 The administration plans to instruct various government agencies to partner with similar agencies around the world. This
-step doesn't include any mention about crypto.
+step doesn't include any mention of crypto.
 
 The administration is set to help third-world countries develop their financial structure architecture as well as help
-tech companies to find a place for their products on foreign markets.
+tech companies to find a place for their products in foreign markets.
 
 ### Illicit Activities
 
 The US is pushing for KYC around the world.
 
-> While our efforts have strengthened the U.S. financial system, digital assets —some of which are pseudonymous and can
-> be transferred without a financial intermediary— have been exploited by bad actors...
-
-<sub>Fact Sheet</sub>
+"While our efforts have strengthened the U.S. financial system, digital assets —some of which are pseudonymous and can
+be transferred without a financial intermediary— have been exploited by bad actors..." - Fact Sheet
 
 > All crypto is pseudonymous and doesn’t require an intermediary for movement, this goes with FATF rhetoric which
 > would label every crypto transaction high-risk as it doesn't include an intermediary
 
 <sub>Coinbureau</sub>
 
-Crypto is being used by bad actors for illicit purposes -> no stats for that, they know it's only 0.15% of all
-transactions are related to illicit activity -> 2 - 5% of all Fiat transactions are related to the illicit activity (
-despite KYC and AML) -> shows they haven't done anything in this regard in the last 30 years rather than creating
-multi-billion business of compliance companies and justified government overreach
+The Fact Sheet claims that crypto is being used by bad actors for illicit purposes but doesn't provide stats for that. They know only 0.15% of all
+transactions are related to illicit activity. 2 - 5% of all Fiat transactions are related to the illicit activity (
+despite KYC and AML). This shows they haven't done anything in this regard in the last 30 years rather than creating
+multi-billion business of compliance companies and justified government overreach.
 
 #### Steps
 
-US politicians to expand US secrecy act to include crypto (will includeDeFi and NFT), all transactions over 10k $ have
-to be reported, also peer-to-peer which they want to get rid of
-also, push to raise penalties for unlicensed money transacting - going after Defi and possibly crypto wallets
-Push to let department of justice prosecute digital asset crimes in any jurisdiction the victim of this crime is found
+US politicians plan to expand US secrecy act to include crypto (will includeDeFi and NFT). All transactions over 10k $ have
+to be reported, also peer-to-peer which they want to get rid of. They are also pushing to raise penalties for unlicensed money transacting - going after Defi and possibly crypto wallets.
+There are efforts to let the department of justice prosecute digital asset crimes in any jurisdiction the victim of this crime is found.
 
 > Will the US government reach anywhere in the world?
 
 <sub>Coinbureau</sub>
 
-Instruct treasury DPT to publish reports about the illicit finance risk of DeFi and NFTs end of Feb and July next year
-Continue to expose and disrupt illicit actors - more sanctions
-work with the private sector to understand illicit risks
+- Instruct treasury DPT to publish reports about the illicit finance risk of DeFi and NFTs end of February and July next year.
+- Continue to expose and disrupt illicit actors and impose more sanctions.
+- Work with the private sector to understand illicit risks.
 
 ### Digital $ CBDC
 
@@ -234,8 +231,8 @@ It could help preserve US financial leadership and support the effectiveness of 
 
 <sub>Coinbureau</sub>
 
-"The Administration has developed Policy Objectives for a U.S. CBDC System, which reflect the federal government’s
-priorities for a potential U.S. CBDC."
+"The Administration has developed Policy Objectives for a US CBDC System, which reflect the federal government’s
+priorities for a potential US CBDC." - Fact Sheet
 
 > The ball is already rolling, treasury department will work with FED to create CBDC.
 
